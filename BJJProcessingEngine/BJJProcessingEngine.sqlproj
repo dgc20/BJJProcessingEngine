@@ -56,5 +56,10 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="ProcessEngine" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="ProcessEngine\Load_SmoothComp_Events.sql" />
+    <Build Include="ProcessEngine.sql" />
   </ItemGroup>
 </Project>
